@@ -2,6 +2,7 @@
     <meta charset="utf-8" />
     <title>Gavin Hewitt - Final Project</title>
 </head>
+
 <body>
     <h1>
         Music Visualizations Final Project - Gavin Hewitt
@@ -12,73 +13,92 @@
             Project Overview
         </h2>
         <p>
-            For my final project, I chose to visualize different characteristics of music found on Spotify to explore the relationships between them using
-            the Spotify Tracks Dataset from Kaggle, found <a href="https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset">here</a>.
+            For my final project, I chose to visualize different characteristics of music found on Spotify to explore
+            the relationships between them using
+            the Spotify Tracks Dataset from Kaggle, found <a
+                href="https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset">here</a>.
         </p>
         <p>
-            You can find information on every field in the dataset at the provided link; here is a description of each field used in the project:
-            <ul>
-                <li>
-                    <strong>Danceability:</strong> Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, 
-                    rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
-                </li>
-                <li>
-                    <strong>Energy:</strong> Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, 
-                    energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale.
-                </li>
-                <li>
-                    <strong>Key:</strong> The key the track is in using standard Pitch Class notation.
-                </li>
-                <li>
-                    <strong>Mode:</strong> Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived.
-                </li>
-                <li>
-                    <strong>Instrumentalness:</strong> Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. 
-                    Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content.
-                </li>
-                <li>
-                    <strong>Liveness:</strong> Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track 
-                    was performed live. A value above 0.8 provides strong likelihood that the track is live.
-                </li>
-                <li>
-                    <strong>Valence:</strong> A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive 
-                    (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
-                </li>
-                <li>
-                    <strong>Tempo:</strong> The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece 
-                    and derives directly from the average beat duration.
-                </li>
-                <li>
-                    <strong>Track Genre:</strong> The genre in which the track belongs.
-                </li>
-            </ul>
+            You can find information on every field in the dataset at the provided link; here is a description of each
+            field used in the project:
+        <ul>
+            <li>
+                <strong>Danceability:</strong> Danceability describes how suitable a track is for dancing based on a
+                combination of musical elements including tempo,
+                rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is
+                most danceable.
+            </li>
+            <li>
+                <strong>Energy:</strong> Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of
+                intensity and activity. Typically,
+                energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach
+                prelude scores low on the scale.
+            </li>
+            <li>
+                <strong>Key:</strong> The key the track is in using standard Pitch Class notation.
+            </li>
+            <li>
+                <strong>Mode:</strong> Mode indicates the modality (major or minor) of a track, the type of scale from
+                which its melodic content is derived.
+            </li>
+            <li>
+                <strong>Instrumentalness:</strong> Predicts whether a track contains no vocals. "Ooh" and "aah" sounds
+                are treated as instrumental in this context.
+                Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the
+                greater likelihood the track contains no vocal content.
+            </li>
+            <li>
+                <strong>Liveness:</strong> Detects the presence of an audience in the recording. Higher liveness values
+                represent an increased probability that the track
+                was performed live. A value above 0.8 provides strong likelihood that the track is live.
+            </li>
+            <li>
+                <strong>Valence:</strong> A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a
+                track. Tracks with high valence sound more positive
+                (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad,
+                depressed, angry).
+            </li>
+            <li>
+                <strong>Tempo:</strong> The overall estimated tempo of a track in beats per minute (BPM). In musical
+                terminology, tempo is the speed or pace of a given piece
+                and derives directly from the average beat duration.
+            </li>
+            <li>
+                <strong>Track Genre:</strong> The genre in which the track belongs.
+            </li>
+        </ul>
         </p>
     </div>
-    
+
     <!-- Visualization #1 (Heatmap) -->
     <div>
         <h2>
             Popularity of Keys Across Genres
         </h2>
         <p>
-            This is a heatmap that compares the popularity of every key within different genres. For example, in the top left, every acoustic song in the key C,
-            regardless of mode, have a combined popularity score of 6,053. Within the dataset, the two most common keys are C and G, which appear to be the two most popular
-            keys, as well. It's understandable that these keys are used most often in music, as they are two of the simplest to play.
+            This is a heatmap that compares the popularity of every key within different genres. For example, in the top
+            left, every acoustic song in the key C,
+            regardless of mode, have a combined popularity score of 6,053. Within the dataset, the two most common keys
+            are C and G, which appear to be the two most popular
+            keys, as well. It's understandable that these keys are used most often in music, as they are two of the
+            simplest to play.
         </p>
         <div class='tableauPlaceholder' id='viz1745798141793' style="position: relative; margin: auto">
             <noscript>
-                <a href='#'><img alt='Popularity of Keys Across Genres' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;Heatmap_17457946092550&#47;Heatmap&#47;1_rss.png' 
-                    style='border: none' />
+                <a href='#'><img alt='Popularity of Keys Across Genres'
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;Heatmap_17457946092550&#47;Heatmap&#47;1_rss.png'
+                        style='border: none' />
                 </a>
             </noscript>
-            <object class='tableauViz'  style='display:none;'>
+            <object class='tableauViz' style='display:none;'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                 <param name='embed_code_version' value='3' />
                 <param name='site_root' value='' />
                 <param name='name' value='Heatmap_17457946092550&#47;Heatmap' />
                 <param name='tabs' value='no' />
                 <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;Heatmap_17457946092550&#47;Heatmap&#47;1.png' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;Heatmap_17457946092550&#47;Heatmap&#47;1.png' />
                 <param name='animate_transition' value='yes' />
                 <param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' />
@@ -87,11 +107,11 @@
                 <param name='language' value='en-US' />
                 <param name='filter' value='publish=yes' />
             </object>
-        </div>    
+        </div>
         <script type='text/javascript'>
             var divElement = document.getElementById('viz1745798141793');
             var vizElement = divElement.getElementsByTagName('object')[0];
-            vizElement.style.width='70vw';vizElement.style.height=(divElement.offsetWidth*0.65)+'px';
+            vizElement.style.width = '70vw'; vizElement.style.height = (divElement.offsetWidth * 0.65) + 'px';
             var scriptElement = document.createElement('script');
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement)
@@ -104,22 +124,30 @@
             Valence vs Danceability Scatterplot
         </h2>
         <p>
-            This scatterplot explores correlations between valence and danceability in a song. Naturally, one would expect a danceable song to be considered positive, or
-            having a high valence score. This trend is generally observed within the plot, as the points trend upwards and to the right as you continue through the graph
-            with a few outliers. Tempo range is a calculated field I made to make it easier to categorize datapoints by tempo.
+            This scatterplot explores correlations between valence and danceability in a song. Naturally, one would
+            expect a danceable song to be considered positive, or
+            having a high valence score. This trend is generally observed within the plot, as the points trend upwards
+            and to the right as you continue through the graph
+            with a few outliers. Tempo range is a calculated field I made to make it easier to categorize datapoints by
+            tempo.
         </p>
         <div class='tableauPlaceholder' id='viz1745799988691' style='position: relative; margin: auto'>
             <noscript>
                 <a href='#'>
-                    <img alt='Valence vs Danceability' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sc&#47;Scatterplot_17457945272740&#47;Scatterplot&#47;1_rss.png' style='border: none' />
+                    <img alt='Valence vs Danceability'
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sc&#47;Scatterplot_17457945272740&#47;Scatterplot&#47;1_rss.png'
+                        style='border: none' />
                 </a>
             </noscript>
-            <object class='tableauViz'  style='display:none;'>
+            <object class='tableauViz' style='display:none;'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
                 <param name='name' value='Scatterplot_17457945272740&#47;Scatterplot' />
-                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sc&#47;Scatterplot_17457945272740&#47;Scatterplot&#47;1.png' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sc&#47;Scatterplot_17457945272740&#47;Scatterplot&#47;1.png' />
                 <param name='animate_transition' value='yes' />
                 <param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' />
@@ -128,12 +156,12 @@
                 <param name='language' value='en-US' />
             </object>
         </div>
-        <script type='text/javascript'>                    
-            var divElement = document.getElementById('viz1745799988691');                    
-            var vizElement = divElement.getElementsByTagName('object')[0];                    
-            vizElement.style.width='70vw';vizElement.style.height=(divElement.offsetWidth*0.65)+'px';                    
-            var scriptElement = document.createElement('script');                    
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1745799988691');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '70vw'; vizElement.style.height = (divElement.offsetWidth * 0.65) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);               
         </script>
     </div>
@@ -144,34 +172,41 @@
             Energy and Instrumentalness by Genre
         </h2>
         <p>
-            This treemap compares every genre by instrumentalness first, then energy. The size of each square is the sum of instrumentalness within the genre,
-            and the color is the sum of energy. I found it interesting to see that there is no obvious correlation between instrumentalness and energy across genres.
+            This treemap compares every genre by instrumentalness first, then energy. The size of each square is the sum
+            of instrumentalness within the genre,
+            and the color is the sum of energy. I found it interesting to see that there is no obvious correlation
+            between instrumentalness and energy across genres.
         </p>
         <div class='tableauPlaceholder' id='viz1745807042209' style='position: relative; margin: auto'>
             <noscript>
                 <a href='#'>
-                    <img alt='Energy and Intrumentalness by Genre' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;Treemap_17457943611780&#47;Treemap&#47;1_rss.png' style='border: none' />
+                    <img alt='Energy and Intrumentalness by Genre'
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;Treemap_17457943611780&#47;Treemap&#47;1_rss.png'
+                        style='border: none' />
                 </a>
             </noscript>
-            <object class='tableauViz'  style='display:none;'>
+            <object class='tableauViz' style='display:none;'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                 <param name='embed_code_version' value='3' />
                 <param name='site_root' value='' />
                 <param name='name' value='Treemap_17457943611780&#47;Treemap' />
-                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;Treemap_17457943611780&#47;Treemap&#47;1.png' />
-                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;Treemap_17457943611780&#47;Treemap&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' />
                 <param name='display_overlay' value='yes' />
                 <param name='display_count' value='yes' />
                 <param name='language' value='en-US' />
                 <param name='filter' value='publish=yes' />
             </object>
-        </div>                
-        <script type='text/javascript'>                    
-            var divElement = document.getElementById('viz1745807042209');                    
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1745807042209');
             var vizElement = divElement.getElementsByTagName('object')[0];
-            vizElement.style.width='70vw';vizElement.style.height=(divElement.offsetWidth*0.65)+'px';
+            vizElement.style.width = '70vw'; vizElement.style.height = (divElement.offsetWidth * 0.65) + 'px';
             var scriptElement = document.createElement('script');
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -184,36 +219,43 @@
             Liveness by Genre
         </h2>
         <p>
-            This is a bar chart measuring the sum of liveness of each genre. I decided to do this visualization to see if there were any genres on Spotify that
-            were recorded live more than others, and as you can see, there are a few! Comedy, pagode, samba, and sertanejo appear to have the most live recordings
+            This is a bar chart measuring the sum of liveness of each genre. I decided to do this visualization to see
+            if there were any genres on Spotify that
+            were recorded live more than others, and as you can see, there are a few! Comedy, pagode, samba, and
+            sertanejo appear to have the most live recordings
             uploaded to Spotify.
         </p>
         <div class='tableauPlaceholder' id='viz1745801277780' style='position: relative; margin: auto'>
             <noscript>
                 <a href='#'>
-                    <img alt='Liveness by Genre' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;LivenessBar&#47;LiveBar&#47;1_rss.png' style='border: none' />
+                    <img alt='Liveness by Genre'
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;LivenessBar&#47;LiveBar&#47;1_rss.png'
+                        style='border: none' />
                 </a>
             </noscript>
-            <object class='tableauViz'  style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                <param name='embed_code_version' value='3' /> 
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
                 <param name='site_root' value='' />
                 <param name='name' value='LivenessBar&#47;LiveBar' />
-                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;LivenessBar&#47;LiveBar&#47;1.png' /> 
-                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;LivenessBar&#47;LiveBar&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' />
                 <param name='display_overlay' value='yes' />
                 <param name='display_count' value='yes' />
                 <param name='language' value='en-US' />
             </object>
-        </div>                
-        <script type='text/javascript'>                    
-            var divElement = document.getElementById('viz1745801277780');                    
-            var vizElement = divElement.getElementsByTagName('object')[0];                    
-            vizElement.style.width='70vw';vizElement.style.height=(divElement.offsetWidth*0.65)+'px';                    
-            var scriptElement = document.createElement('script');                    
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1745801277780');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '70vw'; vizElement.style.height = (divElement.offsetWidth * 0.65) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);                
         </script>
     </div>
@@ -224,40 +266,51 @@
             Bar Charts by Key and Mode
         </h2>
         <p>
-            This is a story of three different bar charts, all measuring a different value by key and mode. When first looking at this dataset, I had a feeling
-            that there would be a correlation between valence, popularity, and danceability. I explored the relationship between valence and danceability in the
-            scatterplot above, but I wanted to see how they would compare to one another from a bar chart perspective and when considered alongside mode and key.
-            As you can see when tabbing through the story, there is little to no change between the charts. I expected this, as one could infer that a song that
-            is considered more positive, or to have a higher valence, would be more danceable; if a song is more danceable, it's likely that more people will listen
-            to the song, boosting its popularity. I found it very interesting that in the key of B, minor songs are considered more popular, danceable, and have a higher
+            This is a story of three different bar charts, all measuring a different value by key and mode. When first
+            looking at this dataset, I had a feeling
+            that there would be a correlation between valence, popularity, and danceability. I explored the relationship
+            between valence and danceability in the
+            scatterplot above, but I wanted to see how they would compare to one another from a bar chart perspective
+            and when considered alongside mode and key.
+            As you can see when tabbing through the story, there is little to no change between the charts. I expected
+            this, as one could infer that a song that
+            is considered more positive, or to have a higher valence, would be more danceable; if a song is more
+            danceable, it's likely that more people will listen
+            to the song, boosting its popularity. I found it very interesting that in the key of B, minor songs are
+            considered more popular, danceable, and have a higher
             valence, which is the oppostite of what I would expect when comparing these across modes.
         </p>
         <div class='tableauPlaceholder' id='viz1745801796637' style='position: relative; margin: auto'>
             <noscript>
                 <a href='#'>
-                    <img alt='Bar Charts by Key and Mode' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProject_17457941883690&#47;Story&#47;1_rss.png' style='border: none' />
+                    <img alt='Bar Charts by Key and Mode'
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProject_17457941883690&#47;Story&#47;1_rss.png'
+                        style='border: none' />
                 </a>
             </noscript>
-            <object class='tableauViz'  style='display:none;'>
+            <object class='tableauViz' style='display:none;'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                 <param name='embed_code_version' value='3' />
                 <param name='site_root' value='' />
                 <param name='name' value='FinalProject_17457941883690&#47;Story' />
                 <param name='tabs' value='no' />
                 <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProject_17457941883690&#47;Story&#47;1.png' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProject_17457941883690&#47;Story&#47;1.png' />
                 <param name='animate_transition' value='yes' />
                 <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' /><param name='language' value='en-US' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
             </object>
-        </div>                
-        <script type='text/javascript'>                    
-            var divElement = document.getElementById('viz1745801796637');                    
-            var vizElement = divElement.getElementsByTagName('object')[0];                    
-            vizElement.style.width='1016px';vizElement.style.height='991px';                    
-            var scriptElement = document.createElement('script');                    
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1745801796637');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '1016px'; vizElement.style.height = '991px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);                
         </script>
     </div>
@@ -267,7 +320,7 @@
     body {
         background-color: darkgreen;
         color: #FAF9F6;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
 
     div {
